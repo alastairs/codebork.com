@@ -1,0 +1,39 @@
+---
+layout: post
+title: An Education
+author: alastairs
+nid: 121
+created: 1259272780
+excerpt: !ruby/string:Sequel::SQL::Blob "[4.5/5]\r\n\r\nThis moving story of a teenager
+  growing up in 1960s London charms, startles, amuses, shakes and delights in equal
+  measure.\r\n[img_assist|nid=120|title=An Education|desc=L-R Dominic Cooper, Rosamund
+  Pike, Peter Saarsgard, Carey Mulligan|link=none|align=center|width=400|height=266]\r\n"
+---
+
+[4.5/5]
+
+I can pretty safely say that <em>An Education</em> is the best British film you will see this year, and is definitely one of the best films of any origin that you will see in 2009.  It is beautifully shot, slickly written, and astoundingly well-acted across the board, it neatly captures the experience of growing up in London in the 1960s.  
+
+<a href="http://www.imdb.com/name/nm1659547/">Carey Mulligan</a>, who as Sally Sparrow lit up Stephen Moffat's excellent episode of <em>Doctor Who</em>, <em>Blink</em>, in 2007, is otherwise relatively unknown: her most high-profile film role before <em>An Education</em> was perhaps as Kitty Bennett in Joe Wright's 2005 adaptation of <em>Pride and Prejudice</em>.  Needless to say, she's been quite busy in the meantime with other TV roles, and some stage work as well.  
+
+Mulligan plays Jenny Mellor, a bright, pretty, sixteen year-old school girl with her eyes set on an English degree at Oxford.  Her father (<a href="http://www.imdb.com/name/nm0000547/">Alfred Molina</a>) is pushy, encouraging her in her academic activities and her hobbies, and very set in his views of what is best for his daughter, and what young people should be doing.  Her mother (<a href="http://www.imdb.com/name/nm0786806/">Cara Seymour</a>) is a stereotypical quiet-and-slightly-downtrodden 1960s housewife, wanting the best for her daughter and supporting her husband.  One day on her way home from school in the pouring rain, Jenny is offered a lift by a charming youngish man, David (<a href="http://www.imdb.com/name/nm0765597/">Peter Saarsgard</a>, who at times has more than a little of Kiefer Sutherland about him).  
+
+David has a flash maroon Bristol sports car and appreciates music and art: he offers Jenny an exciting ray of light in her otherwise dull and grey existence.  Soon he is starting to distract Jenny from her school-work, drawing her into his world of concerts and champagne and fine clothes and jazz clubs and fancy restaurants with his friends Danny (<a href="http://www.imdb.com/name/nm1002641/">Dominic Cooper</a>) and Helen (a sparkling <a href="http://www.imdb.com/name/nm0683253/">Rosamund Pike</a>) and they quickly fall in love.  Jenny becomes uneasy about some aspects of David's life and his business dealings with Danny as she learns more about his world, but he distracts her with gifts and trips to Oxford and Paris.  Jenny's parents are as enamoured with David as she is herself, and when David proposes to Jenny her father gives them his blessing and explains how its worked out well for Jenny and that she needn't bother with Oxford any longer.  And then David turns out not to be who he said he was.  
+
+[img_assist|nid=120|title=An Education|desc=L-R Dominic Cooper, Rosamund Pike, Peter Saarsgard, Carey Mulligan|link=none|align=center|width=400|height=266]
+
+<a href="http://www.imdb.com/name/nm0394984/">Nick Hornby</a>'s (<em>High Fidelity</em>, <em>About a Boy</em>) screenplay is well-written, moving seamlessly between scenes and dwelling on the more touching or startling moments with precisely the right amount of emphasis.  It crackles and sparkles with wit: whilst this is not a comedy by any stretch of the imagination, you will find yourself laughing regularly until the final scenes.  <a href="http://www.imdb.com/name/nm0771054/">Lone Scherfig</a>'s direction provides some memorable scenes and paces the on-screen action beautifully: never do you feel the film is dragging nor rushing ahead.  An example is the re-styling of Jenny in the vein of Audrey Hepburn for the trip to Paris; whilst Mulligan is transformed into the very image of Hepburn, the moment that takes your breath away is the styling of 1960s Paris after Hepburn's own 1964 film <em>Paris - When it Sizzles</em>.
+
+There are some stand-out performances, as well.  Carey Mulligan is utterly superb in this respect, bringing an amazing mix of naïveté, youthful willfulness, vulnerability and braggadocio to a very complex role.  As such,  I except and greatly hope we will be seeing more of her in the future.  Similarly, Rosamund Pike's portrayal of the beautiful but <em>very</em> ditsy Helen cannot go unmentioned.  Pike reportedly wanted the smaller role <a href="http://www.imdb.com/title/tt1174732/trivia">because "no one ever lets me be funny"</a> and she really excels in it, bringing (misplaced) snobbishness, airheaded gazes and no-questions-asked acceptance of Danny's and David's business in equal measure.  Dominic Cooper, who was also excellent in the film of Alan Bennett's <em>The History Boys</em> in 2006, and in other roles since, revels in the fun of the role whilst bringing a small but necessary amount of compassion to Jenny's situation later into the film.  <a href="http://www.imdb.com/name/nm0000668/">Emma Thompson</a>, in a role that amounts to little more than a cameo, is as excellent as ever playing the matriarch of a headmistress at Jenny's school.  
+
+In short, this really is a must-see film on all counts.  If you miss it at the cinema, be sure to pick it up next year when it's released to DVD!
+
+<hr />
+
+<h3>Spoiler alert!</h3>
+
+Not a spoiler in the usual sense, that I'm going to give away crucial plot details, but the information below may still spoil the experience of the film for you, which is why I have separated this from the main body of the review.  It changed my experience of the film for me; more on that in a moment.  
+
+This is, in fact, a true story, based on the memoirs of the journalist Lynn Barber (formerly of The Observer, now with The Telegraph).  You can read an excerpt from the book of the same title <a href="http://www.guardian.co.uk/culture/2009/jun/07/lynn-barber-virginity-relationships" title="My harsh lesson in love and life">here on The Guardian's website</a> (it also provides a detailed synopsis of the plot of the film); an interview with Barber following the publication of her memoirs is available <a href="http://www.telegraph.co.uk/culture/books/5507121/Lynn-Barber-I-know-Ive-done-a-bad-thing.html" title="Lynn Barber: 'I know I've done a bad thing'">on the Telegraph's website</a>.  What surprises me a bit is that the film is not being sold as a true story at all: there is no mention of the fact on the posters, and I haven't seen any interviews about the film mentioning it.  
+
+I had read the extract from Barber's memoirs back in June when it was published; I don't remember the film being mentioned in the article at that point, but it wasn't something that would necessarily stick in my mind.  It was with some shock, then, that I realised about a third of the way into the film that some of the plot details were remarkably familiar.  When it all slotted into place, that Jenny, David, and every other character in the film were in fact real people and every scene had played out nearly fifty years ago, and that I suddenly knew how this story was going to end, it became a somewhat uncomfortable film to watch.  I spent the rest of the film feeling slightly sickened by what I was watching on screen &mdash; seeing a real person's life crumble &mdash; and I was no longer able to enjoy the film in isolation, to feel as detached from the subject matter as I might have otherwise.  As a result of this, the film <em>has</em> left more of an impression on me, but I'm in two minds as to whether or not that's a good thing; as much as I loved this film and would love to watch it a second time, I think I would struggle to do so.
