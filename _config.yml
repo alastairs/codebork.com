@@ -28,9 +28,31 @@ markdown: kramdown
 theme: jekyll-theme-hacker
 plugins:
   - jekyll-feed
+  - jekyll-paginate
+  - jekyll-assets
+  - jekyll-include-cache
 
 github:
   - metadata
+
+excerpt_separator: <!--break-->
+
+paginate: 25
+paginate_path: "/posts/page/:num/"
+
+assets:
+  compress:
+    css: true
+    js: true
+  features:
+    automatic_img_size: false
+  sources:
+    - assets/fonts
+    - assets/images
+    - assets/js
+    - assets/css
+    - _vendor/
+    - sites/default/files
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
