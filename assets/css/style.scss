@@ -1,0 +1,20 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+ul.article-list {
+
+  li.article-list-item {
+    list-style: none;
+    padding-bottom: 3rem;
+
+    a {
+     text-decoration: none;
+    }
+  }
+
+  div.article-list-footer {
+    font-size: small;
+  }
+}
