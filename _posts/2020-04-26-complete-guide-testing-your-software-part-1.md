@@ -1,6 +1,6 @@
 ---
 layout: post
-title: tbd
+title: A Complete Guide to Testing Your Software, Part 1
 author: Alastair Smith
 created: 1587936218
 tags:
@@ -12,16 +12,28 @@ categories:
  - Testing
 ---
 
-Given conversations this week, I thought it would be useful to write up my thoughts on automated testing. These techniques have worked very well for me in the past on a variety of different projects, and I see no reason for them not to in Cassini.
-<!--break-->
+Having recently started a new gig at [Ieso Digital Health](https://iesohealth.com) (:tada:), I've re-encountered some
+of the usual pains and frustrations around testing. I thought that, with the experience of building a greenfield
+service using recommended good testing practices at CloudHub360 under my belt, I'd resume my &hellip; delayed
+&hellip; [series on testing software](https://codebork.com/2016/12/07/anatomy-of-a-unit-test.html).
+
+Everything I describe in these posts is general purpose, applicable across languages, technology stacks, frameworks,
+and more. If you want to apply them in an existing codebase, you're probably going to have some rearchitecting to do.
+If you're working in a pure Functional language like F#, Haskell, etc., then these principles are going to take a bit
+of adaptation to that paradigm; if this is you, I would _love_ to talk this through with you!
+
+This post is a sort of TL;DR of the series as as a whole. Yes, it's quite long, but it's the series distilled to its
+essence, drawing together information from a variety of sources into a single place. If you're after a succinct
+answer to the question "how do I test my software", this is about as succinct as it gets. (Sorry.)<!--break-->
+
 ## Climbing the testing pyramid
 
 The testing pyramid is a popular visual metaphor created by Mike Cohn in _Succeeding with Agile_, giving some focus to the topics of “what do I test” and “how do I test this?”.
 
-![At the bottom of the testing pyramid is a wide base labelled unit tests; a middle band is labelled integration tests;
-the triangle sat on top is labelled UI tests. On the left-hand side is a double-ended arrow running top-to-bottom,
-labelled "more integration" at the top and "more isolation" at the bottom. On the right-hand side is an equivalent arrow
-with labels "slower" at the top and "faster" at the bottom.](/assets/images/Test%20Pyramid.png)
+![At the bottom of the testing pyramid is a wide base labelled unit tests; a middle band is labelled integration
+tests; the triangle sat on top is labelled UI tests. On the left-hand side is a double-ended arrow running
+top-to-bottom, labelled "more integration" at the top and "more isolation" at the bottom. On the right-hand side is
+an equivalent arrow with labels "slower" at the top and "faster" at the bottom.](/assets/images/Test%20Pyramid.png)
 
 The above representation of the testing pyramid comes from Martin Fowler’s Bliki, in [a post by Ham Vocke][1]. Aside
 from amount of isolation and speed of execution, an additional scale for the pyramid can be the amount of operability that is brought into each: unit tests have none; integration tests include logging; UI tests include metrics/monitoring.
