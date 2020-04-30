@@ -12,10 +12,10 @@ categories:
  - Testing
 ---
 
-Having recently started a new gig at [Ieso Digital Health](https://iesohealth.com) (:tada:), I've re-encountered some
-of the usual pains and frustrations around testing. I thought that, with the experience of building a greenfield
-service using recommended good testing practices at CloudHub360 under my belt, I'd resume my &hellip; delayed
-&hellip; [series on testing software](https://codebork.com/2016/12/07/anatomy-of-a-unit-test.html).
+Having recently started my new gig at [Ieso Digital Health](https://iesohealth.com) (:tada:), I've had an opportunity
+to reflect on the things I learned building a greenfield service using recommended good testing practices at
+CloudHub360. As such, I thought I'd resume my &hellip; delayed &hellip;
+[series on testing software](https://codebork.com/2016/12/07/anatomy-of-a-unit-test.html).
 
 Everything I describe in these posts is general purpose, applicable across languages, technology stacks, frameworks,
 and more. If you want to apply them in an existing codebase, you're probably going to have some rearchitecting to do.
@@ -24,7 +24,7 @@ of adaptation to that paradigm; if this is you, I would _love_ to talk this thro
 
 This post is a sort of TL;DR of the series as as a whole. Yes, it's quite long, but it's the series distilled to its
 essence, drawing together information from a variety of sources into a single place. If you're after a succinct
-answer to the question "how do I test my software", this is about as succinct as it gets. (Sorry.)<!--break-->
+answer to the question "how do I test my software", this is about as short as it gets. (Sorry.)<!--break-->
 
 ## Climbing the testing pyramid
 
@@ -225,7 +225,7 @@ Even without the acceptance tests in place, a walking skeleton is useful, as des
 
 > If you don’t have any code or unit tests yet, just create the simplest possible “Hello World” example or, for a web application a single HTML page, and put a single unit test in place that asserts true. Then you can do the deployment … finally you can do the acceptance test [and] … verify that the web page contains the text “Hello World”.
 
-An example walking skeleton for a Cassini service could be:
+Let's briefly consider a serverless system running on Azure. An example walking skeleton for this could be:
 
  * An Azure Function listening on an HTTP trigger, always returning 200 OK and “Excelsior!”, perhaps encoded in a JSON object like `{ rallyingCry: "Excelsior!" }`
  * A React app calling the endpoint defined by the Azure Function, checking the response code, and rendering the response message
