@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'Code Complete: Software Development Metaphors'
 author: alastairs
 nid: 90

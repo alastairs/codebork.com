@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Windows Live Writer
 author: alastairs
 nid: 126

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Key Construction Decisions
 author: alastairs
 nid: 94

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'Code Complete: Brief Interlude'
 author: alastairs
 nid: 100

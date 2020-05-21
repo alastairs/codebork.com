@@ -1,5 +1,4 @@
 ---
-layout: post
 title: PHP Web Deployment Using Git
 author: alastairs
 nid: 145

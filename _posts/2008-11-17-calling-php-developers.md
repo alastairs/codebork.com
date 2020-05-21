@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Calling PHP Developers
 author: alastairs
 nid: 54

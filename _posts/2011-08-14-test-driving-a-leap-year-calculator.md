@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Test-Driving a Leap Year Calculator
 author: alastairs
 nid: 168

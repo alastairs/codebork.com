@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Search in Windows Vista
 author: alastairs
 nid: 73

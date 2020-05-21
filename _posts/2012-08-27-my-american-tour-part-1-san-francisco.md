@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'My American Tour, Part 1: San Francisco'
 author: alastairs
 nid: 223

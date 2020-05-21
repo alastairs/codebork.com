@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'Code Kata: Scales for development'
 author: alastairs
 nid: 155

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Linux and Server 2008 Active Directory
 author: alastairs
 nid: 35

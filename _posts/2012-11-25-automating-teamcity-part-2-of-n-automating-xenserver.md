@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'Automating TeamCity (Part 2 of n): Automating XenServer'
 author: alastairs
 nid: 226

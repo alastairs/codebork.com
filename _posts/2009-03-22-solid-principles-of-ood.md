@@ -1,5 +1,4 @@
 ---
-layout: post
 title: SOLID Principles of OOD
 author: alastairs
 nid: 72

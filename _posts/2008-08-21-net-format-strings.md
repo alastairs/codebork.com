@@ -1,5 +1,4 @@
 ---
-layout: post
 title: ".NET Format Strings"
 author: alastairs
 nid: 20

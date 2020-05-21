@@ -1,5 +1,4 @@
 ---
-layout: post
 title: PowerShell -whatif
 author: alastairs
 nid: 75

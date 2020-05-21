@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'Code Complete: Working Classes (Part 2 - Good Class Interfaces)'
 author: alastairs
 nid: 110

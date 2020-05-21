@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Moving Home
 author: alastairs
 nid: 133

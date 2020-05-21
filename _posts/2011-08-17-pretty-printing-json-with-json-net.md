@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Pretty-printing JSON with Json.NET
 author: alastairs
 nid: 171

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Casting types in .NET
 author: alastairs
 nid: 67

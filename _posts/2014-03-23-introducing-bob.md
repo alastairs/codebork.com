@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Introducing Bob
 author: alastairs
 nid: 231

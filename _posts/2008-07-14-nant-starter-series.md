@@ -1,5 +1,4 @@
 ---
-layout: post
 title: NAnt Starter Series
 author: alastairs
 nid: 19

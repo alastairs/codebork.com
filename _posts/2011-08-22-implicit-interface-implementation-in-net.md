@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Implicit Interface Implementation in .NET
 author: alastairs
 nid: 173

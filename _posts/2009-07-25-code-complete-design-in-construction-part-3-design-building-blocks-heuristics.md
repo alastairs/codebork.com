@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'Code Complete: Design in Construction (Part 3 - Design Building Blocks: Heuristics)'
 author: alastairs
 nid: 99

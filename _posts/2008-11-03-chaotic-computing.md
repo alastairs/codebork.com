@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Chaotic Computing
 author: alastairs
 nid: 51

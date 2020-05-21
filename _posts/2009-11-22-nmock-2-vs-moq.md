@@ -1,5 +1,4 @@
 ---
-layout: post
 title: NMock 2 vs Moq
 author: alastairs
 nid: 119

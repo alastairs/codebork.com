@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Superuser.com Private Beta
 author: alastairs
 nid: 101

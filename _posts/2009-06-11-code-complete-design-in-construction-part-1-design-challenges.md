@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'Code Complete: Design in Construction (Part 1 - Design Challenges)'
 author: alastairs
 nid: 96

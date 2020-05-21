@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'A Plurality of Ideas: Contrasting Perspectives of Software Craftsmanship'
 author: alastairs
 nid: 229

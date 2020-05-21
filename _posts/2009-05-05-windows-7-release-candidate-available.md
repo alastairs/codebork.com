@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Windows 7 Release Candidate Available
 author: alastairs
 nid: 85

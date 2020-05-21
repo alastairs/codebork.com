@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'Revisiting the SOLID Principles: SRP for Methods?'
 author: alastairs
 nid: 154

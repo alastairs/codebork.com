@@ -1,5 +1,4 @@
 ---
-layout: post
 title: More on Message Passing!
 author: alastairs
 nid: 41

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Windows 7 Aero Snap
 author: alastairs
 nid: 79

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'Code Complete: Design in Construction (Part 4 - Design Practices)'
 author: alastairs
 nid: 108

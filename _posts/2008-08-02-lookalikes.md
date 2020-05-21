@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Lookalikes
 author: alastairs
 nid: 32

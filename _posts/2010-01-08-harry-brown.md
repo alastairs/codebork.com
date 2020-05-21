@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Harry Brown
 author: alastairs
 nid: 123

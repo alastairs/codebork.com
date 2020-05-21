@@ -1,5 +1,4 @@
 ---
-layout: post
 title: My experiences with Server 2008
 author: alastairs
 nid: 34

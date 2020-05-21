@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Introducing GiveCRM
 author: alastairs
 nid: 182

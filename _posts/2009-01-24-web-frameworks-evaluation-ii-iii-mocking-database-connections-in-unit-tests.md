@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'Web Frameworks Evaluation II.iii: Mocking Database Connections in Unit Tests'
 author: alastairs
 nid: 68

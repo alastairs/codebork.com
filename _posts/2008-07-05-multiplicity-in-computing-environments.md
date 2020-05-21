@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Multiplicity in Computing Environments
 author: alastairs
 nid: 11

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'Git: Rescuing changes that have been merged over'
 author: alastairs
 nid: 181

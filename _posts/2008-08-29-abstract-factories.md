@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Abstract Factories
 author: alastairs
 nid: 38

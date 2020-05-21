@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Code Complete Introduction
 author: alastairs
 nid: 87

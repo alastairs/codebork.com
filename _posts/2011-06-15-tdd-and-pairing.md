@@ -1,5 +1,4 @@
 ---
-layout: post
 title: TDD and Pairing
 author: alastairs
 nid: 166

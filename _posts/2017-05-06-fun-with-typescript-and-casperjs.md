@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'Fun with Typescript and CasperJS'
 author: alastairs
 created: 1494081968

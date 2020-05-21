@@ -1,5 +1,4 @@
 ---
-layout: post
 title: reCAPTCHA re-enabled
 author: alastairs
 nid: 91

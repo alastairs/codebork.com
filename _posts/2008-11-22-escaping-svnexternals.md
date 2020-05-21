@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Escaping svn:externals
 author: alastairs
 nid: 59

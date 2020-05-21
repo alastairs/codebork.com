@@ -1,5 +1,4 @@
 ---
-layout: post
 title: A Complete Guide to Testing Your Software, Part 1
 author: Alastair Smith
 created: 1587936218

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'Code Complete: High-Quality Routines (Part 1 - Introduction and Design Considerations)'
 author: alastairs
 nid: 138

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: NUnit Aspirin
 author: alastairs
 nid: 25

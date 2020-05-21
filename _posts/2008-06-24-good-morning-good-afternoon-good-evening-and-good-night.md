@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Good morning, good afternoon, good evening and good night!
 author: alastairs
 nid: 1

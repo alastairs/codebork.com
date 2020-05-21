@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'Public Service Announcement: Io and Prolog on Mac OS X'
 author: alastairs
 nid: 172

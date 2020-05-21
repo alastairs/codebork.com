@@ -1,5 +1,4 @@
 ---
-layout: post
 title: An Education
 author: alastairs
 nid: 121

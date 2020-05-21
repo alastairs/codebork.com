@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Interview Questions for Employers, Part 2
 author: alastairs
 nid: 69

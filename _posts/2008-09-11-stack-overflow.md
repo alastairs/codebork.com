@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Stack Overflow
 author: alastairs
 nid: 42

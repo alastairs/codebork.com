@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'Project Roslyn: .NET''s Compiler as a Service'
 author: alastairs
 nid: 167

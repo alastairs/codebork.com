@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Rating filter module for Drupal
 author: alastairs
 nid: 18

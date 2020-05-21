@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Software Craftsmanship Conference 2011
 author: alastairs
 nid: 158

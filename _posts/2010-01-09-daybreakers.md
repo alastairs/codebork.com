@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Daybreakers
 author: alastairs
 nid: 125

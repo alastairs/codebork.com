@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Initialising a collection from another collection
 author: alastairs
 nid: 175

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'Code Complete: Measure Twice, Cut Once (Part 1 - The Importance of Prerequisites)'
 author: alastairs
 nid: 92

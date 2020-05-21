@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'Desire Lines in software architecture: what can we learn from landscape architecture?'
 author: alastairs
 nid: 235

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'Code Complete: Working Classes (Part 4 - Reasons to Create a Class)'
 author: alastairs
 nid: 112

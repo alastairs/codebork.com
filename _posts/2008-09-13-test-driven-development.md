@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Test-Driven Development
 author: alastairs
 nid: 44

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: NUnit Headaches 2
 author: alastairs
 nid: 23

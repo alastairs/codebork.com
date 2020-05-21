@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Agile Testing & BDD eXchange 2010
 author: alastairs
 nid: 152

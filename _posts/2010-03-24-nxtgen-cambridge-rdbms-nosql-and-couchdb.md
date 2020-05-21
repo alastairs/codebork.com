@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'NxtGen Cambridge: RDBMS, NoSQL and CouchDB'
 author: alastairs
 nid: 134

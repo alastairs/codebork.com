@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Freelance Musicians' Database
 author: alastairs
 nid: 15

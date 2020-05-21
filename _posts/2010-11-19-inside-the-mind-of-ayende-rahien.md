@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Inside the Mind of Ayende Rahien
 author: alastairs
 nid: 151

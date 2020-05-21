@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Stack Overflow Dev Days - London
 author: alastairs
 nid: 118

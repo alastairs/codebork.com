@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Starting out with RavenDB
 author: alastairs
 nid: 213

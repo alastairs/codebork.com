@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Comments Problem
 author: alastairs
 nid: 9

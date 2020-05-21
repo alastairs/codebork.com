@@ -1,5 +1,4 @@
 ---
-layout: post
 title: CAMDUG's first ever Dojo
 author: alastairs
 nid: 170

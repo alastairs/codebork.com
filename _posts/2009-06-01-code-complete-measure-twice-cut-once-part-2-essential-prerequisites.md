@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'Code Complete: Measure Twice, Cut Once (Part 2 - Essential Prerequisites)'
 author: alastairs
 nid: 93

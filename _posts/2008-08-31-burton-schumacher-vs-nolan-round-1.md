@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Burton/Schumacher vs Nolan Round 1
 author: alastairs
 nid: 40

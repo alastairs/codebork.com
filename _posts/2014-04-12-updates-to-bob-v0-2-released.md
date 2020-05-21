@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Updates to Bob, v0.2 released!
 author: alastairs
 nid: 232

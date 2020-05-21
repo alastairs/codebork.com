@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Shure SE210 Earphones
 author: alastairs
 nid: 17

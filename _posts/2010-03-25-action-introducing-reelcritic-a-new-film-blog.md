@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Action! Introducing ReelCritic, a new film blog.
 author: alastairs
 nid: 135

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Now available at codebork.com and SEO
 author: alastairs
 nid: 82

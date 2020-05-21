@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'Plan 28: Building the Analytical Engine'
 author: alastairs
 nid: 150

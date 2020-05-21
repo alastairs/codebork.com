@@ -1,5 +1,4 @@
 ---
-layout: post
 title: PowerShell function Get-ScriptDirectory
 author: alastairs
 nid: 174

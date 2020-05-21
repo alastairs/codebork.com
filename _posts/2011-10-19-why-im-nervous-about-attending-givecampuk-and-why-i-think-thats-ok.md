@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'Why I''m nervous about attending #GiveCampUK, and why I think that''s ok'
 author: alastairs
 nid: 176

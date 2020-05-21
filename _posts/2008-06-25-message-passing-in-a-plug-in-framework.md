@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Message Passing in a Plug-in Framework
 author: alastairs
 nid: 2

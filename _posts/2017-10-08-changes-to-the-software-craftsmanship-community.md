@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Changes to the Cambridge Software Craftsmanship Community
 ---
 

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'The Anatomy of a Unit Test'
 author: alastairs
 created: 1481119718

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'Code Kata: Supermarket Pricing'
 author: alastairs
 nid: 156

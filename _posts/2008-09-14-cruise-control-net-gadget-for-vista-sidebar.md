@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Cruise Control.NET Gadget for Vista Sidebar
 author: alastairs
 nid: 46

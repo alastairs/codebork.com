@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'Visual Studio Build Progress in the Windows 7 Task Bar: Creating a Small VS
   2010 AddIn'
 author: alastairs

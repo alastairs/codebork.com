@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Small update
 author: alastairs
 nid: 105

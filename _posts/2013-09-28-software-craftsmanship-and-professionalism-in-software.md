@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Software Craftsmanship, and Professionalism in Software
 author: alastairs
 nid: 230

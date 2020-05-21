@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'PowerShell one-liner: extract all zip files'
 author: alastairs
 nid: 153

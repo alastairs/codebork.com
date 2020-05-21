@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Interview Questions from Software Development Interviewees
 author: alastairs
 nid: 57

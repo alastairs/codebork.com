@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'Code Complete: Design in Construction (Part 2 - Key Design Concepts)'
 author: alastairs
 nid: 97

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'An Evaluation of Web Frameworks II.ii: Status Report'
 author: alastairs
 nid: 65

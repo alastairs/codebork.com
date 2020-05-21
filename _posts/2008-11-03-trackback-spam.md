@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Trackback Spam
 author: alastairs
 nid: 52

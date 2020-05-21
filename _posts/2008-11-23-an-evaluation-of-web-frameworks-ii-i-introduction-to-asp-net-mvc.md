@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'An Evaluation of Web Frameworks II.i: Introduction to ASP.NET MVC'
 author: alastairs
 nid: 62

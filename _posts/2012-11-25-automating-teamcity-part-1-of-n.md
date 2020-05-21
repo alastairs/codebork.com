@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Automating TeamCity (Part 1 of n)
 author: alastairs
 nid: 225

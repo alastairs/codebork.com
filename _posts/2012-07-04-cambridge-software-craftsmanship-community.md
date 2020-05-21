@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Cambridge Software Craftsmanship Community
 author: alastairs
 nid: 191

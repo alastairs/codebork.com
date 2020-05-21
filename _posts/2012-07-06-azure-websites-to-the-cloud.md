@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'Azure Websites: To the Cloud!'
 author: alastairs
 nid: 195

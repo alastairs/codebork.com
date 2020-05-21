@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'Project Kudu: Git deployment for all!'
 author: alastairs
 nid: 197

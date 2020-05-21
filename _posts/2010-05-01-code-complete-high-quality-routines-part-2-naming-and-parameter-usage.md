@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'Code Complete: High-Quality Routines (Part 2 - Naming and Parameter Usage)'
 author: alastairs
 nid: 141

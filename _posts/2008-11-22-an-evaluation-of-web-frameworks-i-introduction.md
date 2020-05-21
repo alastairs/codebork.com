@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'An Evaluation of Web Frameworks I: Introduction'
 author: alastairs
 nid: 58

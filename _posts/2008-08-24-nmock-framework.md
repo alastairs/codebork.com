@@ -1,5 +1,4 @@
 ---
-layout: post
 title: NMock Framework
 author: alastairs
 nid: 37

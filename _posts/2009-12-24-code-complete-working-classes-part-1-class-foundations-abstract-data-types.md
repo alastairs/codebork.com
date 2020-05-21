@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'Code Complete: Working Classes (Part 1 - Class Foundations: Abstract Data
   Types)'
 author: alastairs

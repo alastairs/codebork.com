@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Newbie Errors, and Horses, not Zebras
 author: alastairs
 nid: 56

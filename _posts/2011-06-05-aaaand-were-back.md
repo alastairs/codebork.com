@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "...aaaand we're back."
 author: alastairs
 nid: 157

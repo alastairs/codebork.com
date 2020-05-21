@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Event Notes
 author: alastairs
 nid: 149

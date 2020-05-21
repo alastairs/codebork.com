@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "#GiveCampUK 2011 - Oh My"
 author: alastairs
 nid: 177

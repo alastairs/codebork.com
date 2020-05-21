@@ -1,5 +1,4 @@
 ---
-layout: post
 title: DDD South West 4
 author: alastairs
 nid: 190

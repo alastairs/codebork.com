@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'New Laptop: Why I Went for a Mac (Again)'
 author: alastairs
 nid: 148

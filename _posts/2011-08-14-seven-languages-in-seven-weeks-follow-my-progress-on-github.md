@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'Seven Languages in Seven Weeks: follow my progress on GitHub'
 author: alastairs
 nid: 169

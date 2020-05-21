@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Serverfault.com Private Beta
 author: alastairs
 nid: 83

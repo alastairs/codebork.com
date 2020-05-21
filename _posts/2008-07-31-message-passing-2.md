@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Message Passing 2
 author: alastairs
 nid: 27

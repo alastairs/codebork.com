@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'Code Complete: Working Classes (Part 3 - Design and Implementation Issues)'
 author: alastairs
 nid: 111

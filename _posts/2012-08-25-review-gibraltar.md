@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'Review: Gibraltar'
 author: alastairs
 nid: 214

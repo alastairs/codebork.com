@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'Code Complete: Preface and Chapter 1'
 author: alastairs
 nid: 88

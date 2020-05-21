@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'Cambridge Software Craftsmanship Community: the next phase!'
 author: alastairs
 nid: 224

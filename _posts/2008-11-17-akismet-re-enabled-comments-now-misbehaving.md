@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Akismet Re-Enabled, Comments Now Misbehaving
 author: alastairs
 nid: 53

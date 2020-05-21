@@ -1,5 +1,4 @@
 ---
-layout: post
 title: ReelCritic - A New Film Blog
 author: alastairs
 nid: 132

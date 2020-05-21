@@ -1,5 +1,4 @@
 ---
-layout: post
 title: The Dark Knight
 author: alastairs
 nid: 28
