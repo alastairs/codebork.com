@@ -6,14 +6,12 @@ GEM
     overcommit (0.53.0)
       childprocess (>= 0.6.3, < 4)
       iniparse (~> 1.4)
-    prettier (0.18.2)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   overcommit
-  prettier
 
 BUNDLED WITH
    2.1.4
