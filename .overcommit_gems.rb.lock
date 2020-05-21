@@ -3,14 +3,29 @@ GEM
   specs:
     childprocess (3.0.0)
     iniparse (1.5.0)
+    kramdown (2.2.1)
+      rexml
+    kramdown-parser-gfm (1.1.0)
+      kramdown (~> 2.0)
+    mdl (0.9.0)
+      kramdown (~> 2.0)
+      kramdown-parser-gfm (~> 1.0)
+      mixlib-cli (~> 2.1, >= 2.1.1)
+      mixlib-config (>= 2.2.1, < 4)
+    mixlib-cli (2.1.6)
+    mixlib-config (3.0.6)
+      tomlrb
     overcommit (0.53.0)
       childprocess (>= 0.6.3, < 4)
       iniparse (~> 1.4)
+    rexml (3.2.4)
+    tomlrb (1.3.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  mdl
   overcommit
 
 BUNDLED WITH
