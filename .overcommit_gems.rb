@@ -1,4 +1,4 @@
 source "https://rubygems.org"
 
+gem "overcommit"
 gem "prettier"
-gem "mdl" #Markdown lint
