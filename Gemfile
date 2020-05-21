@@ -14,7 +14,6 @@ source "https://rubygems.org"
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
 gem "github-pages", "~> 204", group: :jekyll_plugins
 
-gem "prettier"
 gem "overcommit"
 
 # If you have any plugins, put them here!

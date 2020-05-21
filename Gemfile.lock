@@ -217,7 +217,6 @@ GEM
       iniparse (~> 1.4)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
-    prettier (0.18.2)
     public_suffix (3.1.1)
     rb-fsevent (0.10.4)
     rb-inotify (0.10.1)
@@ -255,7 +254,6 @@ DEPENDENCIES
   jekyll-feed (~> 0.6)
   jekyll-include-cache
   overcommit
-  prettier
   tzinfo (~> 1.2)
   tzinfo-data
   wdm (~> 0.1.0)
