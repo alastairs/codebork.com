@@ -65,10 +65,54 @@ $EDITOR $file
 
 The script prompts (via variable substitution) for a title and a category, or it
 will read them from arguments passed to the script, like `./new-post.sh 'My new
-blog post' meta. It stashes the current date and time as a number of seconds,
+blog post' meta`. It stashes the current date and time as a number of seconds,
 which can then be reformatted for use in the filename, and interpolated into
 the`created` field in the YAML front matter of the post template.
 
-As I'm on a Mac, I found the date munging quite tricky in comparison with my
-expectations. It turns out, BSD ships an extended version of the standard UNIX
-`date` command, with ~subtly~ wildly different behaviour.
+As I'm on a Mac, and macOS is based on BSD, I found the date munging quite tricky 
+n comparison with my expectations. It turns out, BSD ships an extended version of
+the standard UNIX `date` command, with ~subtly~ wildly different behaviour. In
+order to do formatting of dates, one has to pass the `-j` argument to ensure the
+system doesn't try to set the date, and also specify the existing format of the
+date (`-f`). It then works as normal UNIX date: just pass the date value, and
+describe the desired output format. 
+
+The script automatically fires up your configured editor, or vim if none is
+specified. I've been using vim for nearly 20 years now, not as my main editor,
+but as my I'm-in-the-terminal-and-need-to-modify-something editor. For ad hoc
+use, it works well enough for me, but I'm (still) nowhere near grasping the full
+power of the thing. 
+
+## git hooks
+
+As I'm running on Jekyll and GitHub pages, I'm in a Ruby environment. I'm not
+super-comfortable in Ruby having only dabbled in the language every now and then,
+but I know enough to find my way around (or, at least, know what to search for).
+Remembering the value of the precommit hooks of Husky during JavaScript
+development, I wanted something similar for the Ruby ecosystem. [Enter
+overcommit.](https://github.com/sds/overcommit) With a wide range of plugins and
+simple extensibility, it was an easy decision to try it out, and easy to install
+and configure. I [now have pre-commit
+hooks](https://github.com/alastairs/codebork.com/blob/master/.overcommit.yml)
+for linting/verifying the YAML files' syntax, trailing whitespace, and linting
+Markdown. Unfortunately,
+[Markdownlint](https://github.com/markdownlint/markdownlint) was trying to lint
+the front matter required by Jekyll for post metadata, so a bit more searching
+was required to turn up the `ignore_front_matter true` setting for my `.mdlrc`.
+
+Overcommit is my belt-and-braces check that my posts and supporting files are
+all formatted correctly, but it would be pretty annoying if I were relying solely
+on these hooks. [Prettier](https://prettier.io/) takes a no-nonsense approach to
+code formatting, and I wanted that for my blog's source, so it was time to shift
+to a parallel universe: Vim plugins.
+
+## Vim configuration
+
+Well, whaddaya know, there's an _official_ [Vim plugin for
+Prettier](https://github.com/prettier/vim-prettier)! This took a bit of
+experimentation though, I'll be honest. 
+
+Having followed the installation instructions (a simple `git clone` and update to
+my `.vimrc`—Vim 8 is brilliant), I realised that it had a dependency on the
+Prettier CLI itself. Thankfully [Homebrew](https://brew.sh) had my back as always
+and that speed bump was quickly overcome. 
