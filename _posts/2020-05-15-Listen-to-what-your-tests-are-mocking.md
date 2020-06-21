@@ -53,15 +53,21 @@ public class Recorder
 }
 ```
 
-This is contrived code for sure, but the overall shape is common: consider a log statement in the success case or a
-different log statement in the error case; or registering a discount for a purchase because it's February and the
-customer was born in a leap year, or not. Paint your own domain over this structure, and then ask yourself the question
-"how do we unit test that logic"? If you answered "Mock the ILogger and expect LogInformation to be called", then read
-on...<!--break-->
+This is contrived code for sure, but the overall shape is common. It might be
+
+- a log statement in the success case or a different log statement in the error case;
+- registering a discount for a purchase because it's February and the customer
+  was born in a leap year, or not;
+- any other mutually-exclusive pair of states.
+
+Paint your own domain over this structure, and then ask yourself the question
+"how do we unit test that logic"? If you answered "Mock the ILogger and expect
+LogInformation to be called", then read on...<!--break-->
 
 ### Testing the Recorder
 
-Using a mocking library, this might look something like the following tests (written with Xunit.net and NSubstitute):
+Using a mocking library, this might look something like the following tests
+(written with Xunit.net and NSubstitute in C#):
 
 ```csharp
 public class RecorderFacts
@@ -90,16 +96,20 @@ public class RecorderFacts
 }
 ```
 
-Referring back to _Growing Object Oriented Software, Guided by Tests_ (GOOS) by Steve Freeman and Nat Pryce, we have
-the advice "only mock types that you own". What does "ownership" mean in this case, and why is this advisable? Let's
+Referring back to _Growing Object Oriented Software, Guided by Tests_ (GOOS) by
+Steve Freeman and Nat Pryce, we have the advice "only mock types that you own".
+What does "ownership" mean in this case, and why is this advisable? Let's
 examine things we _don't_ own:
 
-At the most obvious level, it is any type that comes from a published package, such as those on nuget.org or npmjs.com.
-You (probably) didn't write the library you're consuming, and you're not in control of the API of it. Mocking and
-stubbing this library is going to result in brittle tests—i.e., tests that fail because of a change in something other
-than the system under test—because any change made to a method signature you have mocked is more than likely to cause
-the tests to break, or even fail to compile. If you're using a library with a stable API, though, you're not going to
-see these issues. The bigger problem is that **you are reimplementing the library** with mock methods, and there are two
+At the most obvious level, it is any type that comes from a published package,
+such as those on nuget.org or npmjs.com. You (probably) didn't write the library
+you're consuming, and you're not in control of the API of it. Mocking and
+stubbing this library is going to result in brittle tests—i.e., tests that fail
+because of a change in something other than the system under test—because any
+change made to a method signature you have mocked is more than likely to cause
+the tests to break, or even fail to compile. If you're using a library with a
+stable API, though, you're not going to see these issues. The bigger problem is
+that **you are reimplementing the library** with mock methods, and there are two
 aspects to this problem.
 
 The first is that you are encoding your expectations of the behaviour of the library without actually using the library.
