@@ -20,12 +20,12 @@ keep hosting costs down. On the other side of the coin, I really like the
 workflows I built around Docker, and want to continue building on those. As
 such, I've been researching options for running Docker Containers on Azure,
 beyond the obvious orchestration example of Kubernetes. This blog post is a
-summary of what I've found so far. All quotations are for North Europe (Dublin):
-whilst all are available in UK South (London), the region is at least
-second-tier when it comes to updates, previews, etc., and is not as cheap as the
-North Europe region on some services. The prices are in GBP as I am based in the
-UK and billed in GBP. All prices converted to monthly equivalent costs are based
-on a 730-hour month.
+~~semi-~~ not very scientific summary of what I've found so far. <!--break-->All
+quotations are for North Europe (Dublin): whilst all are available in UK South
+(London), the region is at least second-tier when it comes to updates, previews,
+etc., and is not as cheap as the North Europe region on some services. The
+prices are in GBP as I am based in the UK and billed in GBP. All hourly prices
+converted to monthly equivalent costs are based on a 730-hour month.
 
 I've divided the options into Infrastructure-as-a-Service (IaaS) and
 Platform-as-a-Service (PaaS) options. While all of the PaaS options can be
@@ -110,8 +110,8 @@ that may not make this a slam-dunk option (e.g. the fact that these virtual
 nodes won't run DaemonSet resources), but it can certainly be a cost-effective
 way to scale.
 
-**Conclusion: £25/month base price is affordable, but the available resources
-are small and the incremental cost of scaling out is at least £25/month.**
+**Conclusion:** £25/month base price is affordable, but the available resources
+are small and the incremental cost of scaling out is at least £25/month.
 
 # Platform-as-a-Service (PaaS)
 
@@ -143,6 +143,10 @@ Linux plans, which excludes the lower-priced co-located resources. The Basic
 tier App Service for Linux plan is £0.013/hour, or £9.79/month, but beware of
 the up-sells to services such as Azure Front Door which can be very pricey.
 
+**Conclusion:** The <£10/month price point is highly attractive, and the
+platform product comes with a number of features at that level: custom domains,
+an integrated load balancer, SSL and web sockets.
+
 ## Azure Container Instances (ACI)
 
 Azure Container Instances is an interesting and novel service, and, if memory
@@ -169,6 +173,10 @@ Service, ACI is not "all-inclusive" and only provides the compute resources.
 Public IP addresses for ACI container groups are an add-on component and billed
 at the standard ~£2/month.
 
+**Conclusion:** This is one of the more expensive ways of running a container on
+Azure. Use this for elastic scaling, worker processes, etc., and not for
+long-running apps.
+
 ## Azure Functions
 
 Finally, it's possible to run containers from Azure Functions. At the time of
@@ -190,45 +198,46 @@ plan could be sensible. For just running containers, however, the £0.16/hr,
 £113.52/month is prohibitive compared with the other options previously
 discussed.
 
+**Conclusion:** There is little difference between Functions and Azure App
+Service as far as containers are concerned if you're only running HTTP
+processes. The integration with an App Service plan makes this an interesting
+option for running back-end processes listening to platform events. The Premium
+plan isn't worth the money just for a few containers.
+
 # Comparison and Conclusion
+
+Looking at price vs. features, it seems that Azure App Service balances very
+nicely indeed.
 
 I decided to try to compare the services for value for money in three
 dimensions: ease of deployment, no. of CPU cores, and GB RAM provided by the
 services. The latter two are easily quantifiable, and the information is
-generally available too. Ease of deployment is a bit of a fudge factor if I'm
-honest, but I've tried to calculate it as $$ d = r(a + p) $$ where:
+generally available too. "Ease of deployment" is little more than a fudge factor
+if I'm honest, but I tried to take into account things like the maintenance
+overhead (troubleshooting when something goes wrong, patching for security
+updates, upgrading for new features, etc.), how complicated deploying my
+an application of a handful of services would be, and how many additional
+resources would need to be deployed to support the application. The following
+table draws a comparison between the options assuming:
 
-$$ d $$
-: ease of deployment
+- Ubuntu VMs
+- there are 4 containers each of 1x1.5GB vCPU x RAM
+- therefore, the B-series VMs aren't able to accomodate more than two containers
+  each
 
-$$ a $$
-: admin overhead (patching OS, software, troubleshooting, etc.)
-
-$$ p $$
-: my knowledge of application deployment process
-
-$$ r $$
-: a "robot" coefficient, i.e., how easy it is to automate $$ a $$ and $$ p $$
-
-All of these numbers are logarithmic scores between 0 and 1, where 0 is "I have
-no idea how to do this" and 1 is "I've done this before".
-
-| Service                     | Unit price/month | No. of units | Ease of deployment | CPU Cores | RAM (GB) | Value for Money |
-| --------------------------- | ---------------- | ------------ | ------------------ | --------- | -------- | --------------- |
-| _Virtual Machines_          |                  |              |                    |           |          |                 |
-| B1S                         | £6.19            | 1            |                    | 1.00      | 4.00     | 0.0065          |
-| D2av4 Spot                  | £6.04            | 1            | 0.01               | 2.00      | 8.00     | 0.0265          |
-| _Azure Kubernetes Service_  |                  |              |                    |           |          |                 |
-| B2S                         | £24.48           | 1            | 10.00              | 2.00      | 4.00     | 3.2680          |
-| D2v4                        | £58.22           | 1            | 10.00              | 2.00      | 8.00     | 2.7482          |
-| _Azure App Service_         |                  |              |                    |           |          |                 |
-| Linux Basic                 | £9.79            | 1            | 10.00              | 1.00      | 1.75     | 1.7875          |
-| _Azure Container Instances_ | £27.00           | 4            | 5.00               | 1.00      | 1.00     | 0.0463          |
-| _Azure Functions_           |                  |              |                    |           |          |                 |
-| Dedicated                   | £9.79            | 1            | 10.00              | 1.00      | 1.75     | 1.7875          |
-| Premium                     | £113.52          | 1            | 1.00               | 1.00      | 1.00     | 0.0088          |
-
-{% include mathjax.html %}
-
-$$
-$$
+| Service                                                  | Unit price/month | No. units | Ease of deployment | CPU Cores | RAM (GB) | Value for £ |
+| -------------------------------------------------------- | ---------------- | --------- | ------------------ | --------- | -------- | ----------- |
+| **Virtual Machines**                                     |                  |           |                    |           |          |             |
+| B1S                                                      | £6.19            | 2         | 1.0                | 1.00      | 4.00     | 0.3231      |
+| D2a v4 Spot                                              | £6.04            | 1         | 0.1                | 2.00      | 8.00     | 0.2649      |
+| **Azure Kubernetes Service**                             |                  |           |                    |           |          |             |
+| B2S                                                      | £24.48           | 2         | 3.0                | 2.00      | 4.00     | 0.4902      |
+| D2 v4                                                    | £58.22           | 1         | 3.0                | 2.00      | 8.00     | 0.8245      |
+| **Azure App Service, Linux Basic**                       |                  |           |                    |           |          |             |
+| B1                                                       | £9.79            | 1         | 6.0                | 1.00      | 1.75     | 1.0725      |
+| B2                                                       | £19.04           | 1         | 6.0                | 2.00      | 3.50     | 2.2059      |
+| B3                                                       | £38.09           | 1         | 6.0                | 4.00      | 7.00     | 4.4106      |
+| **Azure Container Instances**                            | £27.00           | 4         | 2.0                | 1.00      | 1.00     | 0.0185      |
+| **Azure Functions**                                      |                  |           |                    |           |          |             |
+| Dedicated is equivalent to Azure App Service plans above |                  |           |                    |           |          |             |
+| Premium                                                  | £113.52          | 1         | 6.0                | 1.00      | 3.50     | 0.1850      |
