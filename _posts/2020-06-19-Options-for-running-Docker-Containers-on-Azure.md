@@ -192,17 +192,43 @@ discussed.
 
 # Comparison and Conclusion
 
-| Service                       | Unit price/month | No. of units | Ease of deployment | CPU Cores | RAM (GB) | Value for Money |
-| ----------------------------- | ---------------- | ------------ | ------------------ | --------- | -------- | --------------- |
-| **Virtual Machines**          |                  |              |                    |           |          |                 |
-| B1S                           | £6.19            | 1            | 0.01               | 1.00      | 4.00     | 0.0065          |
-| D2av4 Spot                    | £6.04            | 1            | 0.01               | 2.00      | 8.00     | 0.0265          |
-| **Azure Kubernetes Service**  |                  |              |                    |           |          |                 |
-| B2S                           | £24.48           | 1            | 10.00              | 2.00      | 4.00     | 3.2680          |
-| D2v4                          | £58.22           | 1            | 10.00              | 2.00      | 8.00     | 2.7482          |
-| **Azure App Service**         |                  |              |                    |           |          |
-| Linux Basic                   | £9.79            | 1            | 10.00              | 1.00      | 1.75     | 1.7875          |
-| **Azure Container Instances** | £27.00           | 4            | 5.00               | 1.00      | 1.00     | 0.0463          |
-| **Azure Functions**           |                  |              |                    |           |          |
-| Dedicated                     | £9.79            | 1            | 10.00              | 1.00      | 1.75     | 1.7875          |
-| Premium                       | £113.52          | 1            | 1.00               | 1.00      | 1.00     | 0.0088          |
+I decided to try to compare the services for value for money in three
+dimensions: ease of deployment, no. of CPU cores, and GB RAM provided by the
+services. The latter two are easily quantifiable, and the information is
+generally available too. Ease of deployment is a bit of a fudge factor if I'm
+honest, but I've tried to calculate it as $$ d = r(a + p) $$ where:
+
+$$ d $$
+: ease of deployment
+
+$$ a $$
+: admin overhead (patching OS, software, troubleshooting, etc.)
+
+$$ p $$
+: my knowledge of application deployment process
+
+$$ r $$
+: a "robot" coefficient, i.e., how easy it is to automate $$ a $$ and $$ p $$
+
+All of these numbers are logarithmic scores between 0 and 1, where 0 is "I have
+no idea how to do this" and 1 is "I've done this before".
+
+| Service                     | Unit price/month | No. of units | Ease of deployment | CPU Cores | RAM (GB) | Value for Money |
+| --------------------------- | ---------------- | ------------ | ------------------ | --------- | -------- | --------------- |
+| _Virtual Machines_          |                  |              |                    |           |          |                 |
+| B1S                         | £6.19            | 1            |                    | 1.00      | 4.00     | 0.0065          |
+| D2av4 Spot                  | £6.04            | 1            | 0.01               | 2.00      | 8.00     | 0.0265          |
+| _Azure Kubernetes Service_  |                  |              |                    |           |          |                 |
+| B2S                         | £24.48           | 1            | 10.00              | 2.00      | 4.00     | 3.2680          |
+| D2v4                        | £58.22           | 1            | 10.00              | 2.00      | 8.00     | 2.7482          |
+| _Azure App Service_         |                  |              |                    |           |          |                 |
+| Linux Basic                 | £9.79            | 1            | 10.00              | 1.00      | 1.75     | 1.7875          |
+| _Azure Container Instances_ | £27.00           | 4            | 5.00               | 1.00      | 1.00     | 0.0463          |
+| _Azure Functions_           |                  |              |                    |           |          |                 |
+| Dedicated                   | £9.79            | 1            | 10.00              | 1.00      | 1.75     | 1.7875          |
+| Premium                     | £113.52          | 1            | 1.00               | 1.00      | 1.00     | 0.0088          |
+
+{% include mathjax.html %}
+
+$$
+$$
