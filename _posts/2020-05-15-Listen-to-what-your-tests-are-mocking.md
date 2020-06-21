@@ -1,24 +1,27 @@
 ---
-title: A Complete Guide to Testing Your Software, Part 2 
+title: A Complete Guide to Testing Your Software, Part 2
 author: Alastair Smith
 category: testing
 created: 1589571968
+published: 1592757867
 tags:
- - testing
- - craft
- - TDD
- - design
- - ports and adapters
+        - testing
+        - craft
+        - TDD
+        - design
+        - ports and adapters
 ---
 
 ## <small><i>or, Listen to what your tests are mocking</i></small>
 
 You might remember from [last time](/testing/2020/04/26/complete-guide-testing-your-software-part-1.html) that we
 briefly covered the concept of [Hexagonal
-Architecture](https://en.wikipedia.org/wiki/Hexagonal_architecture_(software)), or "ports and adapters" as it's
-sometimes otherwise known, in the context of using mocks and stubs to resolve some of the pain of integrated tests. The
-"mocks mocking you" meme is a vein well-tapped at this point, so I wanted to come at it from a slightly different angle:
-listening to the tests we write, for what they're telling us about our design. Let's take a look at an example:
+Architecture](<https://en.wikipedia.org/wiki/Hexagonal_architecture_(software)>), or "ports and adapters" as it's
+sometimes otherwise known, in the context of using mocks and stubs to resolve
+some of the pain of integrated tests. I wanted to come at the problem from a
+slightly different angle for this blog post: listening to the tests we write,
+for what they're telling us about our design. Let's take a look at an example in
+C#:
 
 ```csharp
 public class Recorder
@@ -54,9 +57,9 @@ This is contrived code for sure, but the overall shape is common: consider a log
 different log statement in the error case; or registering a discount for a purchase because it's February and the
 customer was born in a leap year, or not. Paint your own domain over this structure, and then ask yourself the question
 "how do we unit test that logic"? If you answered "Mock the ILogger and expect LogInformation to be called", then read
-on...<!--break--> 
+on...<!--break-->
 
-### Testing the Recorder 
+### Testing the Recorder
 
 Using a mocking library, this might look something like the following tests (written with Xunit.net and NSubstitute):
 
@@ -115,12 +118,12 @@ The truth of the matter is that the same applies to any internal packages you co
 library from _any_ package feed, it should be treated as a third-party dependency, as though you don't own it. Ownership
 is not about who wrote the code, it's about whether it changes on the same cadence as the project you're testing. As a
 result, it might be that module references within the same project (or project references within the same solution, in
-Visual Studio terms) need to be integration tested. 
+Visual Studio terms) need to be integration tested.
 
 So what is "code we own"? I think of it like this:
 
 > Does making a change in dependency `A` to support class `Foo` have ramifications for other modules? If not, I own this
-> code and can safely mock it. 
+> code and can safely mock it.
 
 If we have to verify log statements, as we've chosen to do here, we should use a real logger for doing that, because we
 are seeking to verify our integration with the logging library. There are various test-friendly adapters for libraries
@@ -142,10 +145,10 @@ public void Verify_messages_written_to_the_console()
 ```
 
 If your logger is configured to write to the console, the `StringWriter` and `Console.SetOut()` technique will still
-work for you; the Console is a static resource, after all. 
+work for you; the Console is a static resource, after all.
 
-In conclusion, the lessons we've learned here are: 
+In conclusion, the lessons we've learned here are:
 
-  1. **Mock only types you own.** Make sure you're testing what you think you're testing.
-  2. **If you don't own the type, you're integrating with it.** Test your integrations with integration tests, not
-     mocks.
+1. **Mock only types you own.** Make sure you're testing what you think you're testing.
+1. **If you don't own the type, you're integrating with it.** Test your integrations with integration tests, not
+   mocks.
