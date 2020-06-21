@@ -190,4 +190,19 @@ plan could be sensible. For just running containers, however, the £0.16/hr,
 £113.52/month is prohibitive compared with the other options previously
 discussed.
 
-# Conclusion
+# Comparison and Conclusion
+
+| Service                       | Unit price/month | No. of units | Ease of deployment | CPU Cores | RAM (GB) | Value for Money |
+| ----------------------------- | ---------------- | ------------ | ------------------ | --------- | -------- | --------------- |
+| **Virtual Machines**          |                  |              |                    |           |          |                 |
+| B1S                           | £6.19            | 1            | 0.01               | 1.00      | 4.00     | 0.0065          |
+| D2av4 Spot                    | £6.04            | 1            | 0.01               | 2.00      | 8.00     | 0.0265          |
+| **Azure Kubernetes Service**  |                  |              |                    |           |          |                 |
+| B2S                           | £24.48           | 1            | 10.00              | 2.00      | 4.00     | 3.2680          |
+| D2v4                          | £58.22           | 1            | 10.00              | 2.00      | 8.00     | 2.7482          |
+| **Azure App Service**         |                  |              |                    |           |          |
+| Linux Basic                   | £9.79            | 1            | 10.00              | 1.00      | 1.75     | 1.7875          |
+| **Azure Container Instances** | £27.00           | 4            | 5.00               | 1.00      | 1.00     | 0.0463          |
+| **Azure Functions**           |                  |              |                    |           |          |
+| Dedicated                     | £9.79            | 1            | 10.00              | 1.00      | 1.75     | 1.7875          |
+| Premium                       | £113.52          | 1            | 1.00               | 1.00      | 1.00     | 0.0088          |
