@@ -121,7 +121,20 @@ statement, and instead you have to supply the line terminator yourself. You come
 to depend on this behaviour—this _bug_—and it is encoded into all your tests
 mocking the library. A new version of the logging library is released which
 fixes the bug, your tests all continue to pass, and your logs in production are
-all separated by a completely blank line.
+all separated by a completely blank line. This confuses your log ingestion
+pipeline, and your log data becomes corrupted.
+
+Maybe that example's a bit 'meh', so let's look at the same scenario with a
+different sort of library: an API client library. v1 of this library requires
+you to prepare a request and then send it, whilst v2 allows you to specify only
+what you want to send and will do the request preparation for you. Unbeknownst
+to you, the preparation step involves making an `OPTIONS` request to the API.
+Moving from v1 to v2 makes your application means your application is making
+this `OPTIONS` request twice, and you take a performance hit.
+
+These two examples are of breaking changes in behaviour rather than interface or
+API; they cannot be caught by the compiler, only by tests. If you're testing a
+mock of the library, you cannot catch these changes in behaviour.
 
 The second issue with reimplementing the library in mocks is that, if you care
 about the correct use of the library, **it can only be integration tested.** "Oh
