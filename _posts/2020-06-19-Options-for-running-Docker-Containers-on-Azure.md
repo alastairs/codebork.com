@@ -172,7 +172,7 @@ at the standard ~£2/month.
 ## Azure Functions
 
 Finally, it's possible to run containers from Azure Functions. At the time of
-writing, I'm convinced of the benefits of doing this, not least because
+writing, I'm not convinced of the benefits of doing this, not least because
 containers are not supported on the consumption plan for Functions; if this is
 something you're after, then ACI represents the best option here.
 
