@@ -212,7 +212,9 @@ property was added to the class, though, so a bit more reading led me to
 ideal, and, indeed, the implementation became a whole lot simpler:
 
 ```typescript
-*[Symbol.iterator]() { return Object.values(this); }
+*[Symbol.iterator]() {
+	return Object.values(this)[Symbol.iterator]();
+}
 ```
 
 I then realised that this was test-only code, so I moved it to a helper function
@@ -228,7 +230,9 @@ that Not Everything Needs To Be On NPM.
 ```typescript
 const spreadable = (object: object) => ({
 	...object,
-	[Symbol.iterator]: Object.values(object)[Symbol.iterator]
+	[Symbol.iterator](): {
+		return Object.values(object)[Symbol.iterator]();
+	}
 });
 ```
 

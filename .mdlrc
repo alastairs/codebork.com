@@ -1,5 +1,5 @@
 all
 ignore_front_matter true
-rules '~MD002,~MD013,~MD033'
+rules '~MD002,~MD013,~MD033,~MD010'
 rule 'MD029', :style => :ordered
 
