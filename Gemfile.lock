@@ -264,6 +264,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages (~> 207)
+  jekyll (~> 3.9.0)
   jekyll-feed (~> 0.13, >= 0.13.0)
   jekyll-include-cache (>= 0.2.0)
   tzinfo (~> 1.2)
