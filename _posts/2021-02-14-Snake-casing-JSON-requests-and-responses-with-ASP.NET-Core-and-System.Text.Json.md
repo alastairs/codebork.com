@@ -9,8 +9,6 @@ tags:
         - dotnet
 ---
 
-# Snake-casing JSON requests and responses with ASP.NET Core and System.Text.Json
-
 I've been working with ASP.NET Core and .NET Core for about 5 years now, and
 with the 3.0 release it really hit heights of maturity. I find it an enormously
 productive and performant framework, and exceptionally well-designed.
