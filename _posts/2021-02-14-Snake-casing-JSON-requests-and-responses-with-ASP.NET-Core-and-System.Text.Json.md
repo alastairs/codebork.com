@@ -78,19 +78,16 @@ namespace System.Text.Json
 
             while (bufferPosition < buffer.Length)
             {
-                if (namePosition > 0 && name[namePosition] >= 'A' &&
-name[namePosition] <= 'Z')
+                if (namePosition > 0 && name[namePosition] >= 'A' && name[namePosition] <= 'Z')
                 {
                     buffer[bufferPosition] = '_';
-                    buffer[bufferPosition + 1] =
-char.ToLowerInvariant(name[namePosition]);
+                    buffer[bufferPosition + 1] = char.ToLowerInvariant(name[namePosition]);
                     bufferPosition += 2;
                     namePosition++;
                     continue;
                 }
 
-                buffer[bufferPosition] =
-char.ToLowerInvariant(name[namePosition]);
+                buffer[bufferPosition] = char.ToLowerInvariant(name[namePosition]);
 
                 bufferPosition++;
 
@@ -126,28 +123,16 @@ the`DictionaryKeyPolicy` option set:
 
 ```json
 {
-  "title": "One or more validation errors occurred.",
-  "status": 422,
-  "errors": {
-    "Email": [
-      "The Email field is required."
-    ],
-    "Mobile": [
-      "The Mobile field is required."
-    ],
-    "Address": [
-      "The Address field is required."
-    ],
-    "FirstName": [
-      "The FirstName field is required."
-    ],
-    "LastName": [
-      "The LastName field is required."
-    ],
-    "DateOfBirth": [
-      "The DateOfBirth field is required."
-    ]
-  }
+	"title": "One or more validation errors occurred.",
+	"status": 422,
+	"errors": {
+		"Email": ["The Email field is required."],
+		"Mobile": ["The Mobile field is required."],
+		"Address": ["The Address field is required."],
+		"FirstName": ["The FirstName field is required."],
+		"LastName": ["The LastName field is required."],
+		"DateOfBirth": ["The DateOfBirth field is required."]
+	}
 }
 ```
 
@@ -346,4 +331,3 @@ propertyName, int? number)
     }
 }
 ```
-
