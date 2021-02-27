@@ -29,9 +29,7 @@ check your Windows version
 here](https://support.microsoft.com/en-us/windows/which-version-of-windows-operating-system-am-i-running-628bec99-476a-2c13-5296-9dd081cdd808)
 and be sure to run Windows Update before you start this tutorial: it's important
 to keep Windows up-to-date to get the latest features and fixes to protect your
-machine from The Bad Guys™. 
-
-<!-- break-->
+machine from The Bad Guys™. <!-- break-->
 
 ## Working with the Command Line
 
@@ -51,12 +49,12 @@ environment to be somewhere you actually want to be :grinning:
 
 ### Windows Terminal
 
-This is installed from the [Microsoft Store](https://aka.ms/terminal), which is
-the recommended method of installation to ensure it is kept up-to-date.
-Alternatively, you can [download it from
+The easiest way to install Windows Terminal is to download it from the
+[Microsoft Store](https://aka.ms/terminal); this will also ensure it is kept
+up-to-date. Alternatively, you can [download it from
 GitHub](https://github.com/microsoft/terminal/releases/latest). You can choose
-to pin Windows Terminal to your Start screen/menu or task bar if you want to
-quick access to it.
+to pin Windows Terminal to your Start screen/menu, task bar, or Desktop if you
+want quick access to it.
 
 When you first run the terminal, it will open a Powershell tab; this will
 include a start-up message suggesting you "try the new cross-platform
@@ -67,14 +65,15 @@ date and has been superseded by PowerShell Core, which we'll install shortly.
 Windows Terminal is highly-customisable. Press <kbd>Ctrl</kbd>+<kbd>,</kbd> to
 open its settings file and edit it. The program will update its settings each
 time you hit Save! The documentation of the program and its settings is good, so
-be sure to [have a read of
-it](https://docs.microsoft.com/en-us/windows/terminal/) once you've finished
-this tutorial to get it working the way you want.
+be sure to [read it](https://docs.microsoft.com/en-us/windows/terminal/) once
+you've finished this tutorial to get it working the way you want.
 
 ### Package Manager
 
-In your freshly-minted PowerShell tab, run the following snippet to install
-Scoop, the missing package manager for Windows:
+We also want to install and run things easily, so let's install Scoop,
+conceptually similar to Homebrew or apt. In your freshly-minted PowerShell tab,
+run the following snippet to install Scoop, the missing package manager for
+Windows:
 
 ```powershell
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
@@ -96,7 +95,7 @@ scoop install sudo
 
 > **Note about winget**
 > Toward the end of 2020, Microsoft announced a new package management tool for
-> Windows they're calling
+> Windows which they're calling
 > [`winget`](https://docs.microsoft.com/en-us/windows/package-manager/winget/).
 > At the time of writing, winget is still in public preview. This means it
 > requires an Insiders account and a bunch of other small-but-irksome hurdles
@@ -127,7 +126,7 @@ The other thing you'll most likely need when developing on Windows is the new
 subsystem for Linux (WSL). This is a brilliant piece of technology that allows
 you to run a Linux environment from within Windows&mdash;and, as we'll see,
 with Windows Terminal&mdash;without need for spinning up a virtual machine, or
-dual-booting. The experience is fully-integrated, so you can run Linux commands
+dual-booting. The experience is fully integrated, so you can run Linux commands
 from a Windows environment, and Windows programs from the Linux environment.
 
 It's a little bit convoluted to set up, but well worth the investment of time.
@@ -161,16 +160,21 @@ or updates.
 
 Finally, you'll need to install your Linux distribution of choice, which is
 again done [from the Microsoft Store](https://aka.ms/wslstore). I recommend the
-most recent version of Ubuntu, 20.04 at the time of writing. Once it is
-downloaded and installed, you can run it by searching for the name of your
+most recent version of Ubuntu, 20.04 at the time of writing: Ubuntu is user-friendly,
+somewhat ubiquitous, and many courses provide instructions for working in Ubuntu.
+Once it is downloaded and installed, you can run it by searching for the name of your
 distribution from the Start screen/menu - e.g. <kbd>Win</kbd>+<kbd>S</kbd>,
 Ubuntu. You'll be prompted to create a username and password specific to that
 Linux distribution, and you'll need to remember that password for later `sudo`
 operations (the real one this time).
 
 In Windows Terminal, you should now be able to open a new tab into WSL by
-pressing the `+` button and choosing the profile with the pengiun (called
-[tux](https://en.wikipedia.org/wiki/Tux_%28mascot%29)).
+pressing the `v` menu toward the top of the window and choosing the profile with the
+pengiun (called [tux](https://en.wikipedia.org/wiki/Tux_%28mascot%29)).
+
+![The profile selection drop-down menu is displayed overlaid on Windows Terminal, with
+options for Windows PowerShell, Command Prompt, Ubuntu and Azure Cloud
+Shell](assets/images/windows-terminal.png)
 
 ## Conclusion
 
