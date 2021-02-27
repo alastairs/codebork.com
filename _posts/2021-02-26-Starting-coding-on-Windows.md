@@ -38,14 +38,14 @@ least how to feel comfortable in that environment. Historically, that's not
 something that developers on Windows have enjoyed much, limited as they were by
 the tools available at the time, such
 [cmd.exe](https://en.wikipedia.org/wiki/Cmd.exe) and the arcane [batch file
-programming language](https://en.wikipedia.org/wiki/Batch_file#Examples). In
-the last 10-15 years, however, a new scripting language and shell called
+programming language](https://en.wikipedia.org/wiki/Batch_file#Examples). In the
+last 10-15 years, however, a new scripting language and shell called
 [PowerShell](https://github.com/powershell/powershell) has been on the rise and
-last year reached version 7. It even runs cross-platform now! Most recently,
-the Windows console has had a ~~makeover~~ rewrite, which brings it into the
-21st centry with support for tabs, panes, themes (including image and
-transparent backgrounds), and more. Let's start by setting up your terminal
-environment to be somewhere you actually want to be :grinning:
+last year reached version 7. It even runs cross-platform now! Most recently, the
+Windows console has had a ~~makeover~~ rewrite, which brings it into the 21st
+centry with support for tabs, panes, themes (including image and transparent
+backgrounds), and more. Let's start by setting up your terminal environment to
+be somewhere you actually want to be :grinning:
 
 ### Windows Terminal
 
@@ -93,9 +93,8 @@ same aim.
 scoop install sudo
 ```
 
-> **Note about winget**
-> Toward the end of 2020, Microsoft announced a new package management tool for
-> Windows which they're calling
+> **Note about winget** Toward the end of 2020, Microsoft announced a new
+> package management tool for Windows which they're calling
 > [`winget`](https://docs.microsoft.com/en-us/windows/package-manager/winget/).
 > At the time of writing, winget is still in public preview. This means it
 > requires an Insiders account and a bunch of other small-but-irksome hurdles
@@ -124,8 +123,8 @@ you should see a tab open with the newer PowerShell version.
 
 The other thing you'll most likely need when developing on Windows is the new
 subsystem for Linux (WSL). This is a brilliant piece of technology that allows
-you to run a Linux environment from within Windows&mdash;and, as we'll see,
-with Windows Terminal&mdash;without need for spinning up a virtual machine, or
+you to run a Linux environment from within Windows&mdash;and, as we'll see, with
+Windows Terminal&mdash;without need for spinning up a virtual machine, or
 dual-booting. The experience is fully integrated, so you can run Linux commands
 from a Windows environment, and Windows programs from the Linux environment.
 
@@ -145,12 +144,12 @@ to restart your machine after it completes.
 This is also our first bit of real PowerShell code! The comma-delimited syntax
 is short-hand syntax for creating an array, which in this case contains just two
 items, and this is piped into the PowerShell cmdlet (a lightweight command)
-[`Enable-WindowsOptionalFeature`](https://docs.microsoft.com/en-us/powershell/module/dism/enable-windowsoptionalfeature?view=win10-ps), supplied with the `-Online`, `-NoRestart`, and
-`-All` arguments: this ensures we enable the feature on the running operating
-system, suppresses reboot, and installs all dependent features of the named
-feature. You can think of this like a loop: on the first iteration we enable the
-`Microsoft-Windows-Subsystem-Linux` feature, and `VirtualMachinePlatform` on the
-second.
+[`Enable-WindowsOptionalFeature`](https://docs.microsoft.com/en-us/powershell/module/dism/enable-windowsoptionalfeature?view=win10-ps),
+supplied with the `-Online`, `-NoRestart`, and `-All` arguments: this ensures we
+enable the feature on the running operating system, suppresses reboot, and
+installs all dependent features of the named feature. You can think of this like
+a loop: on the first iteration we enable the `Microsoft-Windows-Subsystem-Linux`
+feature, and `VirtualMachinePlatform` on the second.
 
 After you've rebooted your machine (if requested), install the [Linux kernel
 update
@@ -160,21 +159,21 @@ or updates.
 
 Finally, you'll need to install your Linux distribution of choice, which is
 again done [from the Microsoft Store](https://aka.ms/wslstore). I recommend the
-most recent version of Ubuntu, 20.04 at the time of writing: Ubuntu is user-friendly,
-somewhat ubiquitous, and many courses provide instructions for working in Ubuntu.
-Once it is downloaded and installed, you can run it by searching for the name of your
-distribution from the Start screen/menu - e.g. <kbd>Win</kbd>+<kbd>S</kbd>,
-Ubuntu. You'll be prompted to create a username and password specific to that
-Linux distribution, and you'll need to remember that password for later `sudo`
-operations (the real one this time).
+most recent version of Ubuntu, 20.04 at the time of writing: Ubuntu is
+user-friendly, somewhat ubiquitous, and many courses provide instructions for
+working in Ubuntu.  Once it is downloaded and installed, you can run it by
+searching for the name of your distribution from the Start screen/menu - e.g.
+<kbd>Win</kbd>+<kbd>S</kbd>, Ubuntu. You'll be prompted to create a username and
+password specific to that Linux distribution, and you'll need to remember that
+password for later `sudo` operations (the real one this time).
 
 In Windows Terminal, you should now be able to open a new tab into WSL by
-pressing the `v` menu toward the top of the window and choosing the profile with the
-pengiun (called [tux](https://en.wikipedia.org/wiki/Tux_%28mascot%29)).
+opening the drop-down menu toward the top of the window and choosing the profile
+with the pengiun (called [tux](https://en.wikipedia.org/wiki/Tux_%28mascot%29)).
 
-![The profile selection drop-down menu is displayed overlaid on Windows Terminal, with
-options for Windows PowerShell, Command Prompt, Ubuntu and Azure Cloud
-Shell](assets/images/windows-terminal.png)
+![The profile selection drop-down menu is displayed overlaid on Windows
+Terminal, with options for Windows PowerShell, Command Prompt, Ubuntu and Azure
+Cloud Shell](assets/images/windows-terminal.png)
 
 ## Conclusion
 
