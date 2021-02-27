@@ -29,7 +29,7 @@ check your Windows version
 here](https://support.microsoft.com/en-us/windows/which-version-of-windows-operating-system-am-i-running-628bec99-476a-2c13-5296-9dd081cdd808)
 and be sure to run Windows Update before you start this tutorial: it's important
 to keep Windows up-to-date to get the latest features and fixes to protect your
-machine from The Bad Guys™. <!-- break-->
+machine from The Bad Guys™. <!--break-->
 
 ## Working with the Command Line
 
@@ -161,7 +161,7 @@ Finally, you'll need to install your Linux distribution of choice, which is
 again done [from the Microsoft Store](https://aka.ms/wslstore). I recommend the
 most recent version of Ubuntu, 20.04 at the time of writing: Ubuntu is
 user-friendly, somewhat ubiquitous, and many courses provide instructions for
-working in Ubuntu.  Once it is downloaded and installed, you can run it by
+working in Ubuntu. Once it is downloaded and installed, you can run it by
 searching for the name of your distribution from the Start screen/menu - e.g.
 <kbd>Win</kbd>+<kbd>S</kbd>, Ubuntu. You'll be prompted to create a username and
 password specific to that Linux distribution, and you'll need to remember that
