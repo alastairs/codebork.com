@@ -26,7 +26,10 @@ Ubuntu, with nary a mention of Windows at all. I thought I'd try to fill that
 gap :smile: For the purposes of this guide, I'm assuming you're running Windows
 10, and that it's version 1903 (March 2019 Update) or higher. [Find out how to
 check your Windows version
-here](https://support.microsoft.com/en-us/windows/which-version-of-windows-operating-system-am-i-running-628bec99-476a-2c13-5296-9dd081cdd808).
+here](https://support.microsoft.com/en-us/windows/which-version-of-windows-operating-system-am-i-running-628bec99-476a-2c13-5296-9dd081cdd808)
+and be sure to run Windows Update before you start this tutorial: it's important
+to keep Windows up-to-date to get the latest features and fixes to protect your
+machine from The Bad Guys™. 
 
 <!-- break-->
 
