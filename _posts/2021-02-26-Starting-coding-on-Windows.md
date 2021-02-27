@@ -173,7 +173,7 @@ with the pengiun (called [tux](https://en.wikipedia.org/wiki/Tux_%28mascot%29)).
 
 ![The profile selection drop-down menu is displayed overlaid on Windows
 Terminal, with options for Windows PowerShell, Command Prompt, Ubuntu and Azure
-Cloud Shell](assets/images/windows-terminal.png)
+Cloud Shell](/assets/images/windows-terminal.png)
 
 ## Conclusion
 
