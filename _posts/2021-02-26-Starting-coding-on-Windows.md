@@ -1,5 +1,5 @@
 ---
-title: How to start coding on Windows
+title: How to start coding on Windows 10
 author: Alastair Smith
 category: musicoders
 created: 1614362233
@@ -9,36 +9,42 @@ tags:
 ---
 
 Last year, as the pandemic started to bite,
-[Paula](https://www.paulamuldoon.com/) started an idea she'd had for a while: a
-community to support career-changing musicians into the software industry. A
-professional violinist herself, she completed [Makers
-Academy](https://makers.tech/) in 2017, and started Musicoders to provide
-support to others like her. Over the last 11 months, it's flourished into a
-diverse and friendly community of software-developing musicians, and has
-congratulated approximately five members as they've started their new careers in
-that time.
+[Paula](https://www.paulamuldoon.com/) put into practice an idea she'd had for a
+while: a community to support career-changing musicians into the software
+industry. A professional violinist herself, she completed [Makers
+Academy](https://makers.tech/) in 2017, and started
+[Musicoders](https://paulamuldoon.com/musicoders-slack/) to provide support to
+others like her. Over the last 11 months, it's flourished into a diverse and
+friendly community of software-developing musicians, and has congratulated
+approximately five members as they've started their new careers in that time.
 
 As a musical software developer myself, I've been lurking in the Slack team for
 much of its life. Something that has come up a few times of late is the question
 of setting up a development environment on Windows: many online bootcamps and
-starter programs assume or even require macOS or Ubuntu, with nary a mention of
-Windows at all. I thought I'd try to fill that gap :smile: For the purposes of
-this guide, I'm assuming Windows 10 Version 1903 (March 2019 Update) or higher.
+starter programs assume or even require macOS or a Linux distribution such as
+Ubuntu, with nary a mention of Windows at all. I thought I'd try to fill that
+gap :smile: For the purposes of this guide, I'm assuming you're running Windows
+10, and that it's version 1903 (March 2019 Update) or higher. [Find out how to
+check your Windows version
+here](https://support.microsoft.com/en-us/windows/which-version-of-windows-operating-system-am-i-running-628bec99-476a-2c13-5296-9dd081cdd808).
 
 <!-- break-->
 
 ## Working with the Command Line
 
 Many bootcamps and learn-to-code courses teach some command-line skills, or at
-least to feel comfortable in that environment. Historically, that's not
+least how to feel comfortable in that environment. Historically, that's not
 something that developers on Windows have enjoyed much, limited as they were by
-cmd.exe and the arcane batch file programming language. In the last 10-15 years,
-however, PowerShell has been on the rise and last year reached version 7. It
-even runs cross-platform now, and with the Windows Subsytem for Linux, you can
-run Bash or zsh too! Most recently, the Windows console has had a ~~makeover~~
-rewrite, which brings it into the 21st centry with support for tabs, panes,
-themes (including image and transparent backgrounds), and more. Let's start with
-this.
+the tools available at the time, such
+[cmd.exe](https://en.wikipedia.org/wiki/Cmd.exe) and the arcane [batch file
+programming language](https://en.wikipedia.org/wiki/Batch_file#Examples). In
+the last 10-15 years, however, a new scripting language and shell called
+[PowerShell](https://github.com/powershell/powershell) has been on the rise and
+last year reached version 7. It even runs cross-platform now! Most recently,
+the Windows console has had a ~~makeover~~ rewrite, which brings it into the
+21st centry with support for tabs, panes, themes (including image and
+transparent backgrounds), and more. Let's start by setting up your terminal
+environment to be somewhere you actually want to be :grinning:
 
 ### Windows Terminal
 
